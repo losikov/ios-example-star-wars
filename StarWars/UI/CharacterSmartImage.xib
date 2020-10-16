@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CharacterSmartImage" customModule="StarWars" customModuleProvider="target">
+            <connections>
+                <outlet property="eye" destination="LMK-Gs-d7A" id="dIP-x1-tn7"/>
+                <outlet property="face" destination="sYG-0J-S60" id="13H-eN-Bcl"/>
+                <outlet property="hair" destination="uUn-ck-KZH" id="bPu-Ht-iw8"/>
+                <outlet property="mouth" destination="Cmp-na-HdA" id="aPY-0c-Rvz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="face" translatesAutoresizingMaskIntoConstraints="NO" id="sYG-0J-S60" userLabel="face">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mouth" translatesAutoresizingMaskIntoConstraints="NO" id="Cmp-na-HdA" userLabel="mouth">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyes_male" translatesAutoresizingMaskIntoConstraints="NO" id="LMK-Gs-d7A" userLabel="eyes">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hair_male" translatesAutoresizingMaskIntoConstraints="NO" id="uUn-ck-KZH" userLabel="hair">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="Cmp-na-HdA" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="2W1-2L-KP1"/>
+                <constraint firstItem="Cmp-na-HdA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="3oS-Fs-TQS"/>
+                <constraint firstItem="Cmp-na-HdA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3wO-Eg-Ou3"/>
+                <constraint firstItem="LMK-Gs-d7A" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BSa-G2-jle"/>
+                <constraint firstItem="uUn-ck-KZH" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="LR3-lZ-9KP"/>
+                <constraint firstItem="uUn-ck-KZH" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="NUl-4c-xpP"/>
+                <constraint firstItem="uUn-ck-KZH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Pnk-OJ-CLe"/>
+                <constraint firstItem="LMK-Gs-d7A" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="T3A-HG-E8G"/>
+                <constraint firstItem="sYG-0J-S60" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="Ut0-Ly-Pau"/>
+                <constraint firstItem="Cmp-na-HdA" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="YfO-jU-OTn"/>
+                <constraint firstItem="LMK-Gs-d7A" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aOY-A0-t7Y"/>
+                <constraint firstItem="uUn-ck-KZH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="jK0-6a-aKP"/>
+                <constraint firstItem="sYG-0J-S60" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="k53-tB-5av"/>
+                <constraint firstItem="sYG-0J-S60" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qgx-lS-0yX"/>
+                <constraint firstItem="LMK-Gs-d7A" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="sMB-8y-OBq"/>
+                <constraint firstItem="sYG-0J-S60" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="uWH-8h-cfU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="79.6875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="eyes_male" width="550" height="492"/>
+        <image name="face" width="550" height="524"/>
+        <image name="hair_male" width="550" height="524"/>
+        <image name="mouth" width="550" height="524"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
